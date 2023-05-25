@@ -247,7 +247,6 @@ class Font():
         elif record.platformID == Font.Platform.MAC:
             # Mac言語IDのインスタンス生成
             lang = Font.MacLanguage(record.langID)
-            logger.debug(lang)
         # 上記以外
         else:
             logger.warning(f"サポートされていないプラットフォームが含まれています。platformID: {record.platformID}")
